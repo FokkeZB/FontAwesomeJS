@@ -35,7 +35,15 @@ try {
 		$fa = @file_get_contents('fa.js');
 	}
 
+	header('Content-Description: File Transfer');
 	header('Content-Type: text/javascript');
+	header('Content-Disposition: attachment; filename="fa.js"');
+	header('Content-Transfer-Encoding: binary');
+	header('Connection: Keep-Alive');
+	header('Expires: 0');
+	header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+	header('Pragma: public');
+
 	echo $fa;
 
 } catch (Exception $e) {
