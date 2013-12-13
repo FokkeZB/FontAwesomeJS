@@ -21,10 +21,10 @@ try {
 
 		foreach (array_keys($icons) as $i => $icon) {
 			if (strpos($icon, '-') !== false) {
-				$fa .= '    "' . substr($icon, 0, 1) . substr(str_replace(' ', '', ucwords(str_replace('-', ' ', $icon))), 1) . '": String.fromCharCode(0x' . $icons[$icon] . '),' . PHP_EOL;				
+				$fa .= '    "' . substr($icon, 0, 1) . substr(str_replace(' ', '', ucwords(str_replace('-', ' ', $icon))), 1) . '": "\u' . $icons[$icon] . '",' . PHP_EOL;				
 			}
 
-			$fa .= '    "' . $icon . '": String.fromCharCode(0x' . $icons[$icon] . ')' . ($i < $ln - 1 ? ',' : '') . PHP_EOL;
+			$fa .= '    "' . $icon . '": "\u' . $icons[$icon] . '"' . ($i < $ln - 1 ? ',' : '') . PHP_EOL;
 		}
 
 		$fa .= "};";
