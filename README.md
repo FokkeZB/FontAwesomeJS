@@ -29,7 +29,7 @@ The module is a standard CommonJS module, but if you want to use it in [Titanium
     }
     ```
     
-**Note:** This only works on `Ti.UI.Label`, not on `Ti.UI.Button` for some reason.
+**Note:** This works for `Ti.UI.Label` and `Ti.UI.Button`, except when the button is placed in a toolbar.
 
 ## How it works
 The scripts reads and parses the [variables.less](https://raw.github.com/FortAwesome/Font-Awesome/master/less/variables.less) file straight from the Font Awesome GitHub repository. It does the necessary conversion of the unicode and makes sure icon names like `volume-up` also have a second object-property-friendly version, which for this one would be `volumeUp`. The script caches the resulting file for 3 hours, so whenever Font Awesome adds more fonts, you'll have an up-to-date file shortly after.
