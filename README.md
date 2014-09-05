@@ -1,3 +1,8 @@
+> **NOTE**
+>
+> See [IconFont](https://github.com/FokkeZB/IconFont) for a Node.JS CLI that can generate a CommonJS module for any Icon Font.
+> This repository will therefor no longer be maintained.
+
 # FontAwesomeJS
 Generates a CommonJS module exposing the UniCode strings for all [Font Awesome](http://fontawesome.io) [icons](http://fontawesome.io/cheatsheet/).
 
