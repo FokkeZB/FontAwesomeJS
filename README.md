@@ -15,8 +15,11 @@ An online automagically up-to-date version of the script runs at:
 The module is a standard CommonJS module, but if you want to use it in [Titanium](http://www.appcelerator.com/titanium) apps like I do, this is how to do it:
 
 1. Save [FontAwesome.otf](https://github.com/FortAwesome/Font-Awesome/blob/master/fonts/FontAwesome.otf?raw=true) to `app/assets/fonts` for [Alloy](http://www.appcelerator.com/alloy) or `Resources/fonts` for classic apps.
-1. Save [http://fa.fokkezb.nl](http://fa.fokkezb.nl) to `app/lib/fa.js` or `Resources`.
-2. Require it where you need it:
+
+    **NOTE:** It seems like recent versions of the FontAwesome font require the [.ttf](https://github.com/FortAwesome/Font-Awesome/blob/master/fonts/fontawesome-webfont.ttf?raw=true) version ([issue #2](https://github.com/FokkeZB/FontAwesomeJS/issues/2)). Please rename to `FontAwesome.ttf` before use.
+
+2. Save [http://fa.fokkezb.nl](http://fa.fokkezb.nl) to `app/lib/fa.js` or `Resources`.
+3. Require it where you need it:
     ```javascript
     var fa = require('fa');
     ```
@@ -24,7 +27,7 @@ The module is a standard CommonJS module, but if you want to use it in [Titanium
     ```javascript
     Alloy.Globals.fa = require('fa');
     ```
-3. Use the properties together with `FontAwesome` as `fontFamily`, e.g.:
+4. Use the properties together with `FontAwesome` as `fontFamily`, e.g.:
     ```javascript
     '.myLabel': {
         font: {
