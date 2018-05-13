@@ -4,12 +4,7 @@
 > This repository will therefor no longer be maintained.
 
 # FontAwesomeJS
-Generates a CommonJS module exposing the UniCode strings for all [Font Awesome](http://fontawesome.io) [icons](http://fontawesome.io/cheatsheet/).
-
-## Get it online
-An online automagically up-to-date version of the script runs at:
-
-* [http://fa.fokkezb.nl](http://fa.fokkezb.nl)
+Generates a CommonJS module exposing the UniCode strings for all [Font Awesome](http://fontawesome.io) [icons](http://fontawesome.io/cheatsheet/)
 
 ## Use it in a Titanium app
 The module is a standard CommonJS module, but if you want to use it in [Titanium](http://www.appcelerator.com/titanium) apps like I do, this is how to do it:
